@@ -31,7 +31,7 @@ We finally checked in. We started catching up on sleep, sleeping from the aftern
 
 ![Sydney](/images/2026090106.jpeg)
 
-After getting up in the evening, we decided to find something to eat. Our accommodation was near an area with many bars and restaurants, just a short walk away. We chose a restaurant called Hello Auntie, which mainly served Vietnamese food.
+After getting up in the evening, we decided to find something to eat. Our accommodation was near an area with many bars and restaurants, just a short walk away. We chose a restaurant called *Hello Auntie*, which mainly served Vietnamese food.
 
 ![Sydney](/images/2026090107.jpeg)
 
