@@ -121,11 +121,13 @@ After dinner, we strolled back to the hotel, enjoying the scenery of Darling Har
 
 ![Sydney](/images/20260903013.jpeg)
 
+We had lunch at [*Sienna Marina*](https://maps.app.goo.gl/aBz5geFmDZLaEiHL8), and the food was excellent.
+
 ![Sydney](/images/20260903014.jpeg)
 
 ![Sydney](/images/20260903015.jpeg)
 
-![Sydney](/images/20260903016.jpeg)
+<!-- ![Sydney](/images/20260903016.jpeg) -->
 
 ![Sydney](/images/20260903017.jpeg)
 
@@ -149,7 +151,7 @@ After dinner, we strolled back to the hotel, enjoying the scenery of Darling Har
 
 ![Sydney](/images/20260903027.jpeg)
 
-![Sydney](/images/20260903028.jpeg)
+<!-- ![Sydney](/images/20260903028.jpeg) -->
 
 ![Sydney](/images/20260903029.jpeg)
 
