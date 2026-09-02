@@ -31,7 +31,7 @@ We finally checked in. We started catching up on sleep, sleeping from the aftern
 
 ![Sydney](/images/2026090106.jpeg)
 
-After getting up in the evening, we decided to find something to eat. Our accommodation was near an area with many bars and restaurants, just a short walk away. We chose a restaurant called *Hello Auntie*, which mainly served Vietnamese food.
+After getting up in the evening, we decided to find something to eat. Our accommodation was near an area with many bars and restaurants, just a short walk away. We chose a restaurant called [*Hello Auntie*](https://maps.app.goo.gl/7wKS5SHZUVY8RH8x7), which mainly served Vietnamese food. This restaurant has very unique dishes, and they taste quite good. 
 
 ![Sydney](/images/2026090107.jpeg)
 
@@ -43,6 +43,50 @@ We also ordered tiramisu for dessert.
 
 ![Sydney](/images/2026090109.jpeg)
 
+---
 
+### 2026-07-13: RSS2026 Day 1
 
+We arrived at the ICC conference venue.
 
+![Sydney](/images/2026090201.jpeg)
+
+We were going to print posters at that time, so we strolled around downtown Sydney by the way.
+
+![Sydney](/images/2026090202.jpeg)
+
+![Sydney](/images/2026090203.jpeg)
+
+![Sydney](/images/2026090204.jpeg)
+
+![Sydney](/images/2026090205.jpeg)
+
+We casually found a Japanese restaurant for lunch. The name of the restaurant is [*Sushi and Grill*](https://maps.app.goo.gl/9oXu2Q91zfkx2NrJ6). Overall, the taste was rather average; the sashimi was rather bland.
+
+![Sydney](/images/2026090206.jpeg)
+
+![Sydney](/images/2026090207.jpeg)
+
+After lunch, we went to the venue. My oral presentation was in the afternoon, so the main activity was giving the presentation, followed by browsing the robotics exhibit. It was my first time giving an oral presentation to so many people (maybe thousands?), and I felt both nervous and excited.
+
+![Sydney](/images/2026090208.jpeg)
+
+![Sydney](/images/2026090209.jpeg)
+
+![Sydney](/images/20260902010.jpeg)
+
+Around 6 p.m., we left the conference venue to find something to eat. The night view of Darling Harbour was truly beautiful.
+
+![Sydney](/images/20260902011.jpeg)
+
+We had dinner at [*Adria Bar Restaurant*](https://maps.app.goo.gl/6YV9ds951y8TrTYJ9). We ordered scallops, pasta, braised pork knuckle, and some beer. The food was delicious, and we were very satisfied.
+
+![Sydney](/images/20260902012.jpeg)
+
+After dinner, we strolled back to the hotel, enjoying the scenery of Darling Harbour along the way.
+
+![Sydney](/images/20260902013.jpeg)
+
+![Sydney](/images/20260902014.jpeg)
+
+![Sydney](/images/20260902015.jpeg)
