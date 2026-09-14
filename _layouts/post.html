@@ -28,3 +28,34 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var images = document.querySelectorAll('.post-content img[loading="lazy"]');
+
+    if (!('IntersectionObserver' in window)) {
+      images.forEach(function (image) {
+        image.loading = 'eager';
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+
+        var image = entry.target;
+        image.loading = 'eager';
+        image.fetchPriority = 'low';
+        observer.unobserve(image);
+      });
+    }, {
+      rootMargin: '4000px 0px',
+      threshold: 0.01
+    });
+
+    images.forEach(function (image) {
+      observer.observe(image);
+    });
+  });
+</script>
