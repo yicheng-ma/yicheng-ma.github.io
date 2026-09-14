@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<link href="/css/override.css" rel="stylesheet" type="text/css">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -29,33 +28,47 @@ layout: default
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
+<dialog class="photo-lightbox" id="photo-lightbox" aria-label="Full-resolution photo viewer">
+  <div class="photo-lightbox__toolbar">
+    <a class="photo-lightbox__original" href="#" target="_blank" rel="noopener">Open original</a>
+    <button class="photo-lightbox__close" type="button" aria-label="Close full-resolution photo">&times;</button>
+  </div>
+  <img class="photo-lightbox__image" alt="">
+</dialog>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var images = document.querySelectorAll('.post-content img[loading="lazy"]');
+    var lightbox = document.getElementById('photo-lightbox');
+    if (!lightbox || typeof lightbox.showModal !== 'function') return;
 
-    if (!('IntersectionObserver' in window)) {
-      images.forEach(function (image) {
-        image.loading = 'eager';
+    var lightboxImage = lightbox.querySelector('.photo-lightbox__image');
+    var originalLink = lightbox.querySelector('.photo-lightbox__original');
+    var closeButton = lightbox.querySelector('.photo-lightbox__close');
+
+    document.querySelectorAll('[data-full-resolution]').forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+        event.preventDefault();
+        var thumbnail = link.querySelector('img');
+        lightboxImage.src = link.href;
+        lightboxImage.alt = thumbnail ? thumbnail.alt : '';
+        originalLink.href = link.href;
+        document.body.classList.add('photo-lightbox-open');
+        lightbox.showModal();
       });
-      return;
-    }
-
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-
-        var image = entry.target;
-        image.loading = 'eager';
-        image.fetchPriority = 'low';
-        observer.unobserve(image);
-      });
-    }, {
-      rootMargin: '4000px 0px',
-      threshold: 0.01
     });
 
-    images.forEach(function (image) {
-      observer.observe(image);
+    closeButton.addEventListener('click', function () {
+      lightbox.close();
+    });
+
+    lightbox.addEventListener('click', function (event) {
+      if (event.target === lightbox) lightbox.close();
+    });
+
+    lightbox.addEventListener('close', function () {
+      document.body.classList.remove('photo-lightbox-open');
     });
   });
 </script>

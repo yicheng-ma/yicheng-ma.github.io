@@ -39,6 +39,13 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Ordinary JPEGs in posts are converted into responsive display copies at build time.
+# The source image remains untouched and opens at full resolution when clicked.
+responsive_images:
+  widths: [800, 1600, 2400]
+  quality: 92
+  sizes: "(max-width: 800px) calc(100vw - 30px), 740px"
+
 titles_from_headings:
   strip_title: true
   collections: true
