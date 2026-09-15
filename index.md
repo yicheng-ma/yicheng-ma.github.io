@@ -263,99 +263,17 @@ redirect_from:
     <span class="exp-role">&mdash; Research Assistant</span>
     <span class="exp-date">Oct. 2025 &ndash; Present</span>
   </div>
-
-  <!-- {% comment %}
-  <div class="exp-topic">Research on Static and Dynamic Grasping for Warehousing and Logistics</div>
-  <div class="exp-desc">
-    <ul>
-      <li>Constructed a geometric grasping module based on GSNet, using graspness to measure points suitable for grasping and extracting local and global point cloud features for static grasp generation.</li>
-      <li>Built a dynamic tracking module using multi-threaded high-dimensional feature vectors and cosine similarity to achieve temporal correspondence between grasps across frames.</li>
-      <li>Established a robot motion control and path planning system based on ROS and MoveIt API for multidimensional control of the robotic arm.</li>
-      <li>Designed static and dynamic experiments validating the system's generalization ability for unknown object grasping in logistics scenarios.</li>
-    </ul>
-  </div>
-  <div class="exp-media">
-    <video src="images/dynamic_grasp.mp4" autoplay loop muted playsinline controls></video>
-  </div>
-  {% endcomment %} -->
 </div>
 
 <!-- ---- A*STAR ---- -->
-<div class="exp-block" style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--color-border-light, #f0f0f5);">
+<!-- <div class="exp-block" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--color-border-light, #f0f0f5);"> -->
+<div class="exp-block">
   <div class="exp-header">
     <span class="exp-org">A*STAR SIMTech ARM, Singapore</span>
     <span class="exp-role">&mdash; Research Intern</span>
     <span class="exp-date">Sep. 2024 &ndash; Dec. 2025</span>
   </div>
-
-  <!-- {% comment %}
-  <div class="exp-topic">Gaussian Spotlight: Enhancing Visuomotor Policy Learning via Latent Spatial Keypoint Embedding</div>
-  <div class="exp-desc">
-    <ul>
-      <li>Introduced a differentiable Gaussian spatial attention field that generates smooth, state-conditioned spotlight masks to highlight manipulation-relevant regions and suppress background distractions.</li>
-      <li>Proposed a skip-layer spatial aggregation pathway to extract fine-grained geometric cues and transform them into latent, keypoint-like spatial embeddings.</li>
-      <li>Gaussian Spotlight consistently achieves better performance in both simulation benchmarks and real-world experiments across various downstream generative policies.</li>
-    </ul>
-  </div>
-  <div class="exp-media">
-    <video src="images/guassian_exp.mp4" autoplay loop muted playsinline controls></video>
-  </div>
-
-  <hr class="exp-divider">
-
-  <div class="exp-topic">3D-LOT Policy: Latent Optimal Transport Flow Matching for One-Step Action Generation</div>
-  <div class="exp-desc">
-    <ul>
-      <li>First to propose LOT and introduce it to 3D point cloud-based flow-matching policies, enabling high-quality robotic action generation from limited demonstrations.</li>
-      <li>Achieves a favorable balance between inference efficiency and policy performance, making one-step action generation practically feasible for real-time manipulation tasks.</li>
-      <li>Evaluated on 8 simulations and 2 real-world tasks, demonstrating competitive success rates with substantially improved inference speed.</li>
-    </ul>
-  </div>
-  <div class="exp-media">
-    <video src="images/lot_exp.mp4" autoplay loop muted playsinline controls></video>
-  </div>
-
-  <hr class="exp-divider">
-
-  <div class="exp-topic">Robotic Manipulation System using Advanced Deep Learning Technique</div>
-  <div class="exp-desc">
-    <ul>
-      <li>Developed a UR10e grasping system for uncertain and dynamic clustered environments, leveraging RTDE for motion planning.</li>
-      <li>Enhanced AnyGrasp by integrating the Grasp-1Billion dataset with MetaGraspNet for improved grasping performance.</li>
-      <li>Built a grasp-based data collector in NVIDIA Isaac Sim for imitation learning, driven by RL agents, AnyGrasp, and scripted policies.</li>
-      <li>Designed a contrastive framework for 3D Diffusion-based robotic manipulation that learns from both positive and negative samples.</li>
-    </ul>
-  </div>
-  <div class="exp-media-row">
-    <video src="images/Isaac_sim.mp4" autoplay loop muted playsinline controls></video>
-    <video src="images/cluttered.mp4" autoplay loop muted playsinline controls></video>
-  </div>
-  {% endcomment %} -->
 </div>
-
-<!-- ---- Grasp Lab ----
-<div class="exp-block" style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--color-border-light, #f0f0f5);">
-  <div class="exp-header">
-    <span class="exp-org">Grasp Lab, Zhejiang University</span>
-    <span class="exp-role">&mdash; Graduation Project &amp; Thesis</span>
-    <span class="exp-date">Sep 2023 &ndash; Jun 2024</span>
-  </div>
-
-  {% comment %}
-  <div class="exp-topic">Research on Static and Dynamic Grasping for Warehousing and Logistics</div>
-  <div class="exp-desc">
-    <ul>
-      <li>Constructed a geometric grasping module based on GSNet, using graspness to measure points suitable for grasping and extracting local and global point cloud features for static grasp generation.</li>
-      <li>Built a dynamic tracking module using multi-threaded high-dimensional feature vectors and cosine similarity to achieve temporal correspondence between grasps across frames.</li>
-      <li>Established a robot motion control and path planning system based on ROS and MoveIt API for multidimensional control of the robotic arm.</li>
-      <li>Designed static and dynamic experiments validating the system's generalization ability for unknown object grasping in logistics scenarios.</li>
-    </ul>
-  </div>
-  <div class="exp-media">
-    <video src="images/dynamic_grasp.mp4" autoplay loop muted playsinline controls></video>
-  </div>
-  {% endcomment %}
-</div> -->
 
 <footer class="home-footer">
   <span>&copy; {{ site.time | date: '%Y' }} Yicheng Ma</span>
