@@ -2,7 +2,8 @@
 layout: scholar-home
 permalink: /
 title: ""
-description: "Yicheng Ma — researcher in robot learning and robotic manipulation"
+# description: "Yicheng Ma — researcher in robot learning and robotic manipulation"
+description: ""
 scholar_home: true
 author_profile: false
 header:
