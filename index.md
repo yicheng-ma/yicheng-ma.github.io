@@ -127,7 +127,7 @@ redirect_from:
       </div>
       <div class="pub-venue">
         International Conference on Robotics and Automation (ICRA), 2026
-        <span class="venue-badge accepted">Accepted</span>
+        <!-- <span class="venue-badge accepted">Accepted</span> -->
       </div>
       <div class="pub-links">
         <a class="pub-link-button" href="https://arxiv.org/abs/2602.02142" target="_blank" rel="noopener noreferrer">Paper</a>
@@ -154,7 +154,7 @@ redirect_from:
       </div>
       <div class="pub-venue">
         IEEE Robotics and Automation Letters (RA-L), 2025
-        <span class="venue-badge accepted">Accepted</span>
+        <!-- <span class="venue-badge accepted">Accepted</span> -->
       </div>
       <div class="pub-links">
         <a class="pub-link-button" href="https://ieeexplore.ieee.org/document/11063337" target="_blank" rel="noopener noreferrer">Paper</a>
@@ -167,6 +167,35 @@ redirect_from:
       </details>
     </div>
   </div>
+
+
+  <!-- Pub: 3D-LOT -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/lot_fig.png" alt="3D-LOT Policy manipulation experiments" loading="lazy" decoding="async" />
+    </div>
+    <div class="pub-text">
+      <div class="pub-title">3D-LOT Policy: Latent Optimal Transport Flow Matching for One-Step Action Generation</div>
+      <div class="pub-authors">
+        <!-- <strong>Yicheng Ma*</strong>, Mohan Liu*, Chang Su, Ruiteng Zhao, Zhiping Lin, and Haiyue Zhu&dagger; -->
+        <strong>Yicheng Ma</strong>
+      </div>
+      <div class="pub-venue">
+        NTU Master's Dissertation
+        <!-- <span class="venue-badge under-review">Under Review</span> -->
+      </div>
+      <div class="pub-links">
+        <a class="pub-link-button" href="https://dr.ntu.edu.sg/entities/publication/15700b4e-2de9-468b-bc27-2f076f0fa025" target="_blank" rel="noopener noreferrer">Paper</a>
+      </div>
+      <details>
+        <summary class="pub-abstract-toggle">Abstract</summary>
+        <div class="pub-abstract">
+          Real-time efficiency is critical for visuomotor policy learning, as any delay in action generation can accumulate over sequential control steps. In this work, we introduce 3D-LOT Policy, a latent prototype-guided optimal transport flow-matching framework for effective single-step action generation. Our approach encodes 3D observations into a compact latent space that preserves task-relevant spatial information and induces prototype structures to serve as anchors for policy learning. Our experiments demonstrate that 3D-LOT achieves lower latency while maintaining or even surpassing baseline performance, offering a practical solution for fast and robust visuomotor policy learning.
+        </div>
+      </details>
+    </div>
+  </div>
+
 
   <h3 class="pub-subheading pub-subheading-review">Manuscripts Under Review</h3>
 
@@ -182,7 +211,7 @@ redirect_from:
       </div>
       <div class="pub-venue">
         <!-- IEEE/ASME Transactions on Mechatronics -->
-        <span class="venue-badge under-review">Under Review</span>
+        <!-- <span class="venue-badge under-review">Under Review</span> -->
       </div>
       <details>
         <summary class="pub-abstract-toggle">Abstract</summary>
@@ -197,7 +226,7 @@ redirect_from:
   <!-- Pub: Gaussian Spotlight -->
   <div class="pub-entry">
     <div class="pub-thumb">
-      <img src="images/guassian_exp.gif" alt="Gaussian Spotlight manipulation experiments" loading="lazy" decoding="async" />
+      <img src="images/guassian_spotlight.png" alt="Gaussian Spotlight manipulation experiments" loading="lazy" decoding="async" />
     </div>
     <div class="pub-text">
       <div class="pub-title">Gaussian Spotlight: Enhancing Visuomotor Policy Learning via Latent Spatial Keypoint Embedding</div>
@@ -217,28 +246,7 @@ redirect_from:
     </div>
   </div>
 
-  <!-- Pub: 3D-LOT -->
-  <div class="pub-entry">
-    <div class="pub-thumb">
-      <img src="images/lot_exp.gif" alt="3D-LOT Policy manipulation experiments" loading="lazy" decoding="async" />
-    </div>
-    <div class="pub-text">
-      <div class="pub-title">3D-LOT Policy: Latent Optimal Transport Flow Matching for One-Step Action Generation</div>
-      <div class="pub-authors">
-        <strong>Yicheng Ma*</strong>, Mohan Liu*, Chang Su, Ruiteng Zhao, Zhiping Lin, and Haiyue Zhu&dagger;
-      </div>
-      <!-- <div class="pub-venue">
-        IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
-        <span class="venue-badge under-review">Under Review</span>
-      </div> -->
-      <details>
-        <summary class="pub-abstract-toggle">Abstract</summary>
-        <div class="pub-abstract">
-          Real-time efficiency is critical for visuomotor policy learning, as any delay in action generation can accumulate over sequential control steps. In this work, we introduce 3D-LOT Policy, a latent prototype-guided optimal transport flow-matching framework for effective single-step action generation. Our approach encodes 3D observations into a compact latent space that preserves task-relevant spatial information and induces prototype structures to serve as anchors for policy learning. Our experiments demonstrate that 3D-LOT achieves lower latency while maintaining or even surpassing baseline performance, offering a practical solution for fast and robust visuomotor policy learning.
-        </div>
-      </details>
-    </div>
-  </div>
+  
 </section>
 
 
@@ -256,7 +264,7 @@ redirect_from:
     <span class="exp-date">Oct. 2025 &ndash; Present</span>
   </div>
 
-  {% comment %}
+  <!-- {% comment %}
   <div class="exp-topic">Research on Static and Dynamic Grasping for Warehousing and Logistics</div>
   <div class="exp-desc">
     <ul>
@@ -269,7 +277,7 @@ redirect_from:
   <div class="exp-media">
     <video src="images/dynamic_grasp.mp4" autoplay loop muted playsinline controls></video>
   </div>
-  {% endcomment %}
+  {% endcomment %} -->
 </div>
 
 <!-- ---- A*STAR ---- -->
@@ -280,7 +288,7 @@ redirect_from:
     <span class="exp-date">Sep. 2024 &ndash; Dec. 2025</span>
   </div>
 
-  {% comment %}
+  <!-- {% comment %}
   <div class="exp-topic">Gaussian Spotlight: Enhancing Visuomotor Policy Learning via Latent Spatial Keypoint Embedding</div>
   <div class="exp-desc">
     <ul>
@@ -322,7 +330,7 @@ redirect_from:
     <video src="images/Isaac_sim.mp4" autoplay loop muted playsinline controls></video>
     <video src="images/cluttered.mp4" autoplay loop muted playsinline controls></video>
   </div>
-  {% endcomment %}
+  {% endcomment %} -->
 </div>
 
 <!-- ---- Grasp Lab ----
