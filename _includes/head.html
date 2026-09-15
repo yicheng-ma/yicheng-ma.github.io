@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Begin SEO -->
+  {% if page.scholar_home %}
+  <title>{{ site.title }}</title>
+  {% seo title=false %}
+  {% else %}
   {% seo %}
+  {% endif %}
   <!-- End SEO -->
 
   {% if page.scholar_home %}
