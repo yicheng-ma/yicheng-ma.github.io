@@ -15,7 +15,7 @@ redirect_from:
 <nav id="top" class="home-nav" aria-label="Primary navigation">
   <a class="home-nav__brand" href="/" aria-label="Yicheng Ma — home">YM</a>
   <div class="home-nav__links">
-    <a href="#research_interests">Research</a>
+    <a class="home-nav__research" href="#research_interests">Research</a>
     <a href="#publications">Publications</a>
     <a href="#research_experience">Experience</a>
     <a class="home-nav__blog" href="/blog/">Blog</a>

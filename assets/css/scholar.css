@@ -1105,7 +1105,7 @@ summary:focus-visible {
     gap: 16px;
   }
 
-  .home-nav__links a:not(.home-nav__blog):not(.home-nav__contact) {
+  .home-nav__links a:not(.home-nav__research):not(.home-nav__blog):not(.home-nav__contact) {
     display: none;
   }
 
