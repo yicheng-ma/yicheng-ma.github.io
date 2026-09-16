@@ -69,6 +69,13 @@ hr {
   height: auto;
 }
 
+.post-content .blog-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 body.photo-lightbox-open {
   overflow: hidden;
 }
