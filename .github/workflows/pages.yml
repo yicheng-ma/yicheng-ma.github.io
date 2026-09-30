@@ -34,7 +34,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .jekyll-cache/responsive-images
-          key: responsive-images-${{ runner.os }}-${{ hashFiles('_plugins/responsive_blog_images.rb', 'images/**/*.jpg', 'images/**/*.jpeg', 'images/**/*.JPG', 'images/**/*.JPEG') }}
+          key: responsive-images-${{ runner.os }}-${{ hashFiles('_plugins/responsive_blog_images.rb', 'images/**/*.jpg', 'images/**/*.jpeg', 'images/**/*.JPG', 'images/**/*.JPEG', 'images/**/*.png', 'images/**/*.PNG') }}
           restore-keys: |
             responsive-images-${{ runner.os }}-
 

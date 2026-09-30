@@ -7,7 +7,7 @@ require "open3"
 require "pathname"
 require "uri"
 
-# Turns ordinary Markdown JPEGs into responsive images during a Jekyll build.
+# Turns ordinary Markdown JPEGs and PNGs into responsive images during a Jekyll build.
 # Original files remain untouched and are linked as the full-resolution version.
 module ResponsiveBlogImages
   DEFAULT_WIDTHS = [800, 1600, 2400].freeze
@@ -88,12 +88,12 @@ module ResponsiveBlogImages
       cache_version = cache_version_for(site)
 
       variants.each do |variant|
-        filename = "#{source[:stem]}-#{variant[:width]}.jpg"
+        filename = "#{source[:stem]}-#{variant[:width]}.#{source[:output_extension]}"
         variant[:output_relative_path] = File.join(OUTPUT_ROOT, filename)
         variant[:cache_path] = File.join(site.source, CACHE_ROOT, cache_version, digest, filename)
       end
 
-      generate_variants(site, source[:path], variants) unless variants.all? { |variant| File.file?(variant[:cache_path]) }
+      generate_variants(site, source[:path], variants, source[:output_extension]) unless variants.all? { |variant| File.file?(variant[:cache_path]) }
       return unless variants.all? { |variant| File.file?(variant[:cache_path]) }
 
       variants.each do |variant|
@@ -122,7 +122,7 @@ module ResponsiveBlogImages
       path = path.delete_prefix(baseurl) unless baseurl.empty?
       path = "/#{path}" unless path.start_with?("/")
       decoded_path = URI::DEFAULT_PARSER.unescape(path)
-      return unless decoded_path.match?(%r{\A/images/.+\.jpe?g\z}i)
+      return unless decoded_path.match?(%r{\A/images/.+\.(?:jpe?g|png)\z}i)
 
       images_root = File.expand_path("images", site.source)
       full_path = File.expand_path(decoded_path.delete_prefix("/"), site.source)
@@ -132,6 +132,7 @@ module ResponsiveBlogImages
       {
         path: full_path,
         stem: relative.sub(/\.[^.]+\z/, ""),
+        output_extension: File.extname(full_path).casecmp?(".png") ? "png" : "jpg",
         url: site_url(site, File.join("images", relative))
       }
     end
@@ -185,15 +186,15 @@ module ResponsiveBlogImages
       end
     end
 
-    def generate_variants(site, source_path, variants)
+    def generate_variants(site, source_path, variants, output_extension)
       variants.each { |variant| FileUtils.mkdir_p(File.dirname(variant[:cache_path])) }
       Jekyll.logger.info "Responsive images:", "Generating #{Pathname.new(source_path).relative_path_from(Pathname.new(site.source))}"
 
       config = settings(site)
-      command = [
-        image_command(site), source_path, "-auto-orient",
-        "-sampling-factor", "4:2:0", "-interlace", "Plane", "-quality", config[:quality].to_s
-      ]
+      command = [image_command(site), source_path, "-auto-orient"]
+      if output_extension == "jpg"
+        command.concat(["-sampling-factor", "4:2:0", "-interlace", "Plane", "-quality", config[:quality].to_s])
+      end
 
       variants.each do |variant|
         command.concat([

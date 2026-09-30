@@ -39,7 +39,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Ordinary JPEGs in posts are converted into responsive display copies at build time.
+# Ordinary Markdown images such as ![Description](/images/example.png) work in posts.
+# Local JPEGs and PNGs are converted into responsive display copies at build time.
 # The source image remains untouched and opens at full resolution when clicked.
 responsive_images:
   widths: [800, 1600, 2400]
